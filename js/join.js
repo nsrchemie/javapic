@@ -53,5 +53,8 @@ if (emailCheck.test($('[name="email"]').val()) === false) {
 //     $('.tagline').html($('[name="name"]').val()
 //     );});
 var $name = $('[name="name"]').val();
-$('#signup').attr("action","gallery.html?" + $name);
+// $('#signup').attr("action","gallery.html?" + $name);
+event.preventDefault();
+window.location.href = "gallery.html?" + $name;
+
 });
